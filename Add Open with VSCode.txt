@@ -5,5 +5,11 @@ reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /ve /t REG_SZ /d "Ope
 reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /v "Icon" /t REG_SZ /d "C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe" /f
 reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode\command" /ve /t REG_SZ /d "\"C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe\" \"%1\"" /f
 
+reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithVSCode\command" /ve /t REG_SZ /d "\"C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe\" \"%V\"" /f
+reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithVSCode" /v Icon /t REG_SZ /d "\"C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe\"" /f
+reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithVSCode\command" /ve /t REG_SZ /d "\"C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe\" \"%V\"" /f
+
+
 Remove
 reg delete "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /f
+reg delete "HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithVSCode" /f
