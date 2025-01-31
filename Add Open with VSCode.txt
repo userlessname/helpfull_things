@@ -1,0 +1,9 @@
+Change YourUser
+
+Add
+reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /ve /t REG_SZ /d "Open with VS Code" /f
+reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /v "Icon" /t REG_SZ /d "C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe" /f
+reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode\command" /ve /t REG_SZ /d "\"C:\Users\YourUser\AppData\Local\Programs\Microsoft VS Code\Code.exe\" \"%1\"" /f
+
+Remove
+reg delete "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /f
