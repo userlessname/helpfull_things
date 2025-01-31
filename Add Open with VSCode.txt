@@ -1,4 +1,4 @@
-Change YourUser
+Change YourUser - Run cmd admin
 
 Add
 reg add "HKEY_CLASSES_ROOT\Directory\shell\OpenWithVSCode" /ve /t REG_SZ /d "Open with VS Code" /f
